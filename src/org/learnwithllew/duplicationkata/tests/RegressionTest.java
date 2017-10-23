@@ -5,6 +5,7 @@ import org.junit.Test;
 import org.learnwithllew.duplicationkata.Lesson1Straight;
 import org.learnwithllew.duplicationkata.Lesson21;
 import org.learnwithllew.duplicationkata.Lesson2Variable;
+import org.learnwithllew.duplicationkata.Lesson31;
 import org.learnwithllew.duplicationkata.Lesson3HigherOrderFunctions;
 
 public class RegressionTest
@@ -38,6 +39,16 @@ public class RegressionTest
   {
     Lesson3HigherOrderFunctions song = new Lesson3HigherOrderFunctions();
     song.singCheers();
+    Approvals.verify(song.song);
+  }
+  @Test
+  public void testNames3()
+  {
+    Lesson31 song = new Lesson31();
+    String[] names = {"Llewellyn", "Samatha", "Tomas", "Emilia"};
+    song.singSong(1, names);
+    song.singSong(2, names);
+    song.singSong(3, names);
     Approvals.verify(song.song);
   }
 }
