@@ -9,7 +9,7 @@ public class Lesson21 extends Song
       case 1 :
         for (String name : names)
         {
-          if (name.startsWith("L"))
+          if (name.startsWith("L", 0))
           {
             sing("Hip Hip Horray! For " + name);
           }
@@ -22,7 +22,7 @@ public class Lesson21 extends Song
       case 2 :
         for (String name : names)
         {
-          if (name.startsWith("S"))
+          if (name.startsWith("am", 1))
           {
             sing("Say yeah! Say yo! Say " + name);
           }
@@ -39,11 +39,5 @@ public class Lesson21 extends Song
         }
         break;
     }
-    // loop over text
-    // special if first
-    // loop over text 
-    // special different
-    // loop over text
-    // no special
   }
 }
