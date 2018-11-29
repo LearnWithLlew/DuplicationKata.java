@@ -1,4 +1,4 @@
-package org.learnwithllew.duplicationkata.tests;
+package org.learnwithllew.duplicationkata;
 
 import org.approvaltests.Approvals;
 import org.junit.jupiter.api.Test;
