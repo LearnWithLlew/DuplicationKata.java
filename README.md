@@ -1,4 +1,9 @@
-# DuplicationKata.java
+DuplicationKata.java
+====================
+
+This is an exercise for practicing removing duplication. Build it like this:
+
+    mvn clean install
 
 
 ## Resources
