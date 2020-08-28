@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.3.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.3.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.3.2")
+    testImplementation("com.approvaltests:approvaltests:2.0.1")
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    options.compilerArgs.add("-Xlint:all")
+    options.incremental = true
+
+    if (jdkWithPreviewFeatures())
+        options.compilerArgs.add("--enable-preview")
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+
+    if (jdkWithPreviewFeatures())
+        jvmArgs("--enable-preview")
+}
+
+static def jdkWithPreviewFeatures() {
+    def currentJvm = org.gradle.internal.jvm.Jvm.current()
+    def matcher = currentJvm =~ /^\d+/
+    return matcher[0].toInteger() > 11
+}
