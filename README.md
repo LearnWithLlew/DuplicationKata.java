@@ -1,5 +1,6 @@
-DuplicationKata.java
-====================
+# DuplicationKata.java
+
+[![test](https://github.com/LearnWithLlew/DuplicationKata.java/actions/workflows/test.yml/badge.svg)](https://github.com/LearnWithLlew/DuplicationKata.java/actions/workflows/test.yml)
 
 This is an exercise for practicing removing duplication. Build it like this:
 
