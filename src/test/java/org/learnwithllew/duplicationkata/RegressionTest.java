@@ -28,7 +28,7 @@ public class RegressionTest
   public void testNames()
   {
     Lesson21 song = new Lesson21();
-    String[] names = {"Llewellyn", "Samatha", "Tomas", "Emilia"};
+    String[] names = {"Llewellyn", "Samantha", "Tomas", "Emilia"};
     song.singSong(1, names);
     song.singSong(2, names);
     song.singSong(3, names);
@@ -45,7 +45,7 @@ public class RegressionTest
   public void testNames3()
   {
     Lesson31 song = new Lesson31();
-    String[] names = {"Llewellyn", "Samatha", "Tomas", "Emilia"};
+    String[] names = {"Llewellyn", "Samantha", "Tomas", "Emilia"};
     song.singSong(1, names);
     song.singSong(2, names);
     song.singSong(3, names);
