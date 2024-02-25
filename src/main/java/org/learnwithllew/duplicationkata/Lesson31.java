@@ -11,7 +11,7 @@ public class Lesson31 extends Song
         {
           if (name.startsWith("L"))
           {
-            sing("Hip Hip Hurray! For " + name);
+            sing("Hip Hip Horray! For " + name);
           }
           else
           {
